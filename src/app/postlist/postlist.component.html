@@ -1,0 +1,17 @@
+
+<div class="view" style="background-image: url('https://www.vamosrayos.com/b/2020/01/patterns-backgrounds-for-iphone-pink-pinterest-plain.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1><u>Write Your Post Here!! </u></h1>    
+            <form (postCreate)="onCreatePost($event)"></form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2><u>List of Posts:-</u></h2>
+                <post *ngFor="let pst of postlist" [post]="pst"></post>
+            </div>
+        </div>
+    </div>
+</div>
